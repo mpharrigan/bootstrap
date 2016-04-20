@@ -54,3 +54,7 @@ docs/.jekyll-metadata
 # Folders to ignore
 bower_components
 node_modules
+
+# mph special ignores
+docs/
+dist/*/umd
