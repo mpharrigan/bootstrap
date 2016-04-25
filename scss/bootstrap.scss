@@ -41,10 +41,12 @@ $jumbotron-padding: 1rem;
 @import "utilities-spacing";
 @import "utilities-responsive";
 
+// Move content down a bit
 div.mph-content {
     margin-top: 1rem;
 }
 
+// Make all description links bootstrap horizontal by default
 dl {
     @extend .dl-horizontal;
 }
