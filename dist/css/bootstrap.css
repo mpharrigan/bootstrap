@@ -4059,4 +4059,8 @@ a.bg-danger:focus, a.bg-danger:hover {
 div.mph-content {
   margin-top: 1rem;
 }
+
+p.readmore {
+  margin-top: -1rem;
+}
 /*# sourceMappingURL=bootstrap.css.map */
