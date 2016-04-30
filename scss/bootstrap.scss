@@ -59,6 +59,11 @@ dd {
     @extend .col-lg-9;
 }
 
+// Jumbotron text automatically "lead"
+div.jumbotron p {
+    @extend .lead;
+}
+
 // For "Read More" links, move them up.
 p.readmore {
     margin-top: -1rem;
