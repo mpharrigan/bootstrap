@@ -61,3 +61,16 @@ $jumbotron-padding: 1rem;
 div.mph-content {
     margin-top: 1rem;
 }
+
+// Make all description links bootstrap horizontal by default
+dl {
+    @extend .dl-horizontal;
+}
+
+dt {
+    @extend .col-lg-3;
+}
+
+dd {
+    @extend .col-lg-9;
+}
