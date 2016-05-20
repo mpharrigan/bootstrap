@@ -4154,4 +4154,18 @@ div.mph-content {
 p.readmore {
   margin-top: -1rem;
 }
+
+.highlight {
+  padding: 1rem;
+  margin: 1rem -1rem;
+  background-color: #f7f7f9;
+}
+
+@media (min-width: 544px) {
+  .highlight {
+    padding: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 /*# sourceMappingURL=bootstrap.css.map */
