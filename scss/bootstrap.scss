@@ -2,6 +2,8 @@
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *
+ * Modifications by Matthew Harrigan
  */
 
 // Core variables and mixins
@@ -25,29 +27,12 @@
 // Components
 @import "animation";
 @import "dropdown";
-@import "button-group";
-@import "input-group";
-@import "custom-forms";
 @import "nav";
 @import "navbar";
-@import "card";
-@import "breadcrumb";
-@import "pagination";
-@import "pager";
-@import "labels";
 @import "jumbotron";
 @import "alert";
-@import "progress";
 @import "media";
-@import "list-group";
 @import "responsive-embed";
-@import "close";
-
-// Components w/ JavaScript
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
 
 // Utility classes
 @import "utilities";
