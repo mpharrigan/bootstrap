@@ -56,3 +56,8 @@ $jumbotron-padding: 1rem;
 @import "utilities-background";
 @import "utilities-spacing";
 @import "utilities-responsive";
+
+// Move content down a bit
+div.mph-content {
+    margin-top: 1rem;
+}
