@@ -558,7 +558,7 @@ h6 {
   font-size: 1rem;
 }
 
-.lead {
+.lead, div.jumbotron p {
   font-size: 1.25rem;
   font-weight: 300;
 }
