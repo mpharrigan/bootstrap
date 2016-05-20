@@ -4146,4 +4146,8 @@ a.bg-danger:focus, a.bg-danger:hover {
     display: none !important;
   }
 }
+
+div.mph-content {
+  margin-top: 1rem;
+}
 /*# sourceMappingURL=bootstrap.css.map */
