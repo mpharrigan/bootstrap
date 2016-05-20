@@ -333,6 +333,12 @@ module.exports = function (grunt) {
           '**/*'
         ],
         dest: 'docs/dist/'
+      },
+      jquery: {
+        cwd: 'bower_components/jquery/dist/',
+        src: '*',
+        dest: 'dist/js/',
+        expand: true
       }
     },
 
@@ -489,7 +495,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test-js', ['eslint', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
 
   // JS distribution task.
-  grunt.registerTask('dist-js', ['babel:dev', 'concat', 'lineremover', 'babel:dist', 'stamp', 'uglify:core', 'commonjs']);
+  grunt.registerTask('dist-js', ['babel:dev', 'concat', 'lineremover', 'babel:dist', 'stamp', 'uglify:core', 'commonjs', 'copy:jquery']);
 
   grunt.registerTask('test-scss', ['scsslint']);
 
