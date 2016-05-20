@@ -3292,15 +3292,15 @@ input[type="button"].btn-block {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem .5rem;
+  margin-bottom: 1rem;
   background-color: #eceeef;
   border-radius: .3rem;
 }
 
 @media (min-width: 544px) {
   .jumbotron {
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
   }
 }
 
