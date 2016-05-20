@@ -59,3 +59,8 @@ dt {
 dd {
     @extend .col-lg-9;
 }
+
+// Jumbotron text automatically "lead"
+div.jumbotron p {
+    @extend .lead;
+}
