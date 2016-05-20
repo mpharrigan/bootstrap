@@ -4296,15 +4296,15 @@ a.label:focus, a.label:hover {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem .5rem;
+  margin-bottom: 1rem;
   background-color: #eceeef;
   border-radius: .3rem;
 }
 
 @media (min-width: 544px) {
   .jumbotron {
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
   }
 }
 
@@ -4960,7 +4960,7 @@ button.close {
 
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
-       -o-transition:         transform .3s ease-out, -o-transform .3s ease-out;
+       -o-transition:      -o-transform .3s ease-out;
           transition: -webkit-transform .3s ease-out;
           transition:         transform .3s ease-out;
           transition:         transform .3s ease-out, -webkit-transform .3s ease-out, -o-transform .3s ease-out;
@@ -5356,7 +5356,7 @@ button.close {
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .carousel-item {
     -webkit-transition: -webkit-transform .6s ease-in-out;
-         -o-transition:         transform .6s ease-in-out, -o-transform .6s ease-in-out;
+         -o-transition:      -o-transform .6s ease-in-out;
             transition: -webkit-transform .6s ease-in-out;
             transition:         transform .6s ease-in-out;
             transition:         transform .6s ease-in-out, -webkit-transform .6s ease-in-out, -o-transform .6s ease-in-out;
