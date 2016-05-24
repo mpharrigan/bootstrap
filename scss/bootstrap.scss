@@ -36,6 +36,9 @@ $jumbotron-padding: 1rem;
 @import "media";
 @import "responsive-embed";
 
+// highlighting c/o https://github.com/richleland/pygments-css
+@import "github"; 
+
 // Utility classes
 @import "utilities";
 @import "utilities-background";
