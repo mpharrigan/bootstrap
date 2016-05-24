@@ -51,6 +51,9 @@ $jumbotron-padding: 1rem;
 @import "popover";
 @import "carousel";
 
+// highlighting c/o https://github.com/richleland/pygments-css
+@import "github"; 
+
 // Utility classes
 @import "utilities";
 @import "utilities-background";
