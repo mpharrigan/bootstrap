@@ -195,16 +195,7 @@ module.exports = function (grunt) {
       bootstrap: {
         src: [
           'js/src/util.js',
-          'js/src/alert.js',
-          'js/src/button.js',
-          'js/src/carousel.js',
           'js/src/collapse.js',
-          'js/src/dropdown.js',
-          'js/src/modal.js',
-          'js/src/scrollspy.js',
-          'js/src/tab.js',
-          'js/src/tooltip.js',
-          'js/src/popover.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
@@ -333,6 +324,12 @@ module.exports = function (grunt) {
           '**/*'
         ],
         dest: 'docs/dist/'
+      },
+      jquery: {
+        cwd: 'bower_components/jquery/dist/',
+        src: '*',
+        dest: 'dist/js/',
+        expand: true
       }
     },
 
@@ -489,7 +486,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test-js', ['eslint', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
 
   // JS distribution task.
-  grunt.registerTask('dist-js', ['babel:dev', 'concat', 'lineremover', 'babel:dist', 'stamp', 'uglify:core', 'commonjs']);
+  grunt.registerTask('dist-js', ['babel:dev', 'concat', 'lineremover', 'babel:dist', 'stamp', 'uglify:core', 'commonjs', 'copy:jquery']);
 
   grunt.registerTask('test-scss', ['scsslint']);
 
@@ -499,9 +496,9 @@ module.exports = function (grunt) {
     require('./grunt/bs-sass-compile/' + sassCompilerName + '.js')(grunt);
   })(process.env.TWBS_SASS || 'libsass');
   // grunt.registerTask('sass-compile', ['sass:core', 'sass:extras', 'sass:docs']);
-  grunt.registerTask('sass-compile', ['sass:core', 'sass:docs']);
+  grunt.registerTask('sass-compile', ['sass:core']);
 
-  grunt.registerTask('dist-css', ['sass-compile', 'postcss:core', 'csscomb:dist', 'cssmin:core', 'cssmin:docs']);
+  grunt.registerTask('dist-css', ['sass-compile', 'postcss:core', 'csscomb:dist', 'cssmin:core']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
