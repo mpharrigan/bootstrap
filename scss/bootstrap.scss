@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+$enable-flex: true;
+
 // Core variables and mixins
 @import "custom";
 @import "variables";
@@ -52,3 +54,38 @@
 
 // Utility classes
 @import "utilities";
+
+#toc {
+  ul { @extend .nav; @extend .nav-pills; @extend .nav-stacked;}
+  li { @extend .nav-item; }
+  a { @extend .nav-link; }
+
+  li.toctree-l2{
+    margin-left: 1rem;
+  }
+
+  li.toctree-l2::before{
+    content:"+";
+    position: absolute;
+    margin-top: 0.5rem;
+  }
+
+  .current{
+    @extend .active;
+  }
+}
+
+.headerlink {
+  @extend .text-muted;
+  font-size: smaller;
+  margin-left: 0.5rem;
+}
+
+.longtable{
+  @extend .table;
+  @extend .table-bordered;
+}
+
+.figure {
+  img { @extend .img-fluid;}
+}
