@@ -132,5 +132,34 @@ $enable-flex: true;
 }
 
 .figure {
-  img { @extend .img-fluid;}
+  @extend .card;
+
+  img {
+    @extend .img-fluid;
+    @extend .card-img-top;
+  }
+
+  .caption {
+    @extend .card-block;
+    @extend .card-text;
+    font-size: 90%;
+  }
+}
+
+.figure.align-right{
+  @extend .pull-md-right;
+  width: 18rem;
+}
+.figure.align-left{
+  @extend .pull-md-left;
+  width: 18rem;
+}
+.figure.align-center{
+  @include media-breakpoint-up(xs){
+    width:100%;
+  }
+  @include media-breakpoint-up(md){
+    width: 80%;
+    margin-left: 10%;
+  }
 }
