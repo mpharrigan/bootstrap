@@ -7334,4 +7334,24 @@ a.text-danger:focus, a.text-danger:hover {
     margin-left: 10%;
   }
 }
+
+#versions #other-versions-text {
+  color: #55595c;
+}
+
+#versions #other-versions {
+  margin-top: 0.5rem;
+}
+
+#versions .list-inline-item.version {
+  margin-left: 0.5rem;
+}
+
+#versions .card-block, #versions .figure .caption, .figure #versions .caption {
+  padding: 0.5rem;
+}
+
+#versions .btn-sm, #versions .btn-group-sm > .btn {
+  padding: 0.125rem 0.3rem;
+}
 /*# sourceMappingURL=bootstrap.css.map */
