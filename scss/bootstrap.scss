@@ -56,23 +56,68 @@ $enable-flex: true;
 @import "utilities";
 
 #toc {
-  ul { @extend .nav; @extend .nav-pills; @extend .nav-stacked;}
+  ul {
+    @extend .nav;
+  }
+  .toctree-l1 ul{
+    display: none;
+  }
+  .current > ul {
+    display: block;
+  }
   li { @extend .nav-item; }
   a { @extend .nav-link; }
-
-  li.toctree-l2{
-    margin-left: 1rem;
-  }
-
-  li.toctree-l2::before{
-    content:"+";
-    position: absolute;
-    margin-top: 0.5rem;
-  }
 
   .current{
     @extend .active;
   }
+
+  a {
+    display: block;
+    padding: .25rem .75rem;
+    color: $gray;
+  }
+  a:hover,
+  a:focus {
+    color: $brand-primary;
+    text-decoration: none;
+  }
+  .current > a {
+    font-weight: 500;
+    color: $gray-dark;
+  }
+
+  // All levels of nav
+  .toctree-l1 ul li > a {
+    display: block;
+    padding: .25rem .75rem;
+    font-size: 90%;
+    color: #99979c;
+  }
+  .toctree-l1 ul li > a:hover,
+  .toctree-l1 ul li > a:focus {
+    color: $brand-primary;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .toctree-l1 ul .current > a,
+  .toctree-l1 ul .current:hover > a,
+  .toctree-l1 ul .current:focus > a {
+    font-weight: 500;
+    color: $gray-dark;
+    background-color: transparent;
+  }
+}
+
+#toc > ul > li.current {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#toc > ul > li:first-child {
+  margin-top: 0;
+}
+#toc> ul > li:last-child {
+  margin-bottom: 2rem;
 }
 
 .headerlink {
